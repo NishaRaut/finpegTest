@@ -27,6 +27,7 @@
               "src/styles.css"
             ],
             "scripts": []
+          
           },
           "configurations": {
             "production": {
@@ -115,6 +116,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "finpegtest"
+    }
+  },
+  "defaultProject": "finpegtest",
+  "cli": {
+    "analytics": "2d6b36f7-e1f0-4381-ba57-4db116bdbea2"
+  }
 }

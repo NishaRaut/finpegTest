@@ -1,0 +1,32 @@
+<div class="main-div" fxLayout="row" fxLayoutAlign="space-between center">
+
+    <div class="mid-div" fxLayout="row" fxLayoutAlign="space-evenly center">
+        <div>All Funds</div>
+        <div>Screener</div>
+        <div>Filter by AMC</div>
+    </div>
+    <div class="Search" fxLayout="row" fxLayoutAlign="center center">
+        <mat-icon>search</mat-icon>
+    </div>
+</div>
+<div *ngFor="let products of funds" class="main-div2" fxLayout="column"  fxLayoutGap="11px">
+    <div class="fund-name" fxLayout="row" fxLayoutAlign="space-between center" >
+        <img class="fund-logo" src="../assets/Images/Screenshot from 2020-08-20 22-27-59.png">
+        <div class="exs" fxLayout="column" fxLayoutGap="13px" >
+            <div class="name">
+                {{products.name}}
+            </div>
+            <div class="equity">Equity mid cap</div>
+        </div>
+        <div  fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="arrow">keyboard_arrow_right</mat-icon>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center end">
+        <div class="first" fxLayout="row" fxLayoutAlign="center center">Show performance datails</div>
+        <div class="second" fxLayout="row" fxLayoutAlign="space-around center">
+            <mat-icon class="logo"> shopping_cart </mat-icon>
+            <span class="txt">Investment</span>
+        </div>
+    </div>
+</div>
